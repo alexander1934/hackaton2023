@@ -1,13 +1,15 @@
-import logo from '../../images/logo.png'
-import Button from '../../components/Button/Button'
+import logo from '../../images/logo.png';
+import Button from '../../components/Button/Button';
+import MultiDropdown from "../../components/MultiDropdown/MultiDropdown";
+import {Link} from "react-router-dom";
 
 const MainPage = () => {
     return (
       <div>
         <header className='header'>
-          <a className='logo-link' href="#">
+          <Link className='logo-link' to={'/'}>
               <img className='logo' src={logo} alt="Логотип" />
-          </a>
+          </Link>
           <p className='nickname'>Профацкий Михаил Андреевич <a className='entry-link' href="#"></a></p>
         </header>
         <main className='main'>
@@ -15,15 +17,13 @@ const MainPage = () => {
                 <h1 className='list-applications__title'>Список заявок</h1>
                 <div className='list-applications__columns'>
                 <div className='table-container'>
-                  {/* Саня вставит ХУЙ */}
-                  <form className='form-applications' action="" method='get'>
-                    <div className='filter-inputs'>
-                      <input type="text" />
-                      <select name="" id=""></select>
-                    </div>
-                    <Button />
-                  </form>
-                  {/* ДО СЮДА */}
+                    <MultiDropdown
+                        options={[
+                            { key: "INN", value: "ИНН" },
+                            { key: "clientID", value: "№ клиента" },
+                            { key: "requestID", value: "№ запроса" },
+                        ]}
+                    />
                 </div>
                 <aside className='sidebar-filter'>
                   <p>Фильтр</p>
