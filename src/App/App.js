@@ -1,13 +1,14 @@
 import './App.css';
-import Button from "../components/Button/Button";
-import Loader from "../components/Loader/Loader";
-import Input from "../components/Input/Input";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
     return (
-        <div className="App">
-
-        </div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<div>Главная</div>} />
+                <Route path="/application" element={<div></div>} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 
