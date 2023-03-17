@@ -1,12 +1,14 @@
 import './App.css';
-import Button from "../Button/Button";
+import Button from "../components/Button/Button";
+import Loader from "../components/Loader/Loader";
+import Input from "../components/Input/Input";
 
 function App() {
-  return (
-    <div className="App">
-      <Button text={ "Alexander" }/>
-    </div>
-  );
+    return (
+        <div className="App">
+
+        </div>
+    );
 }
-//grbrbrtbrb
+
 export default App;
