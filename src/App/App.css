@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
 
 *,
 *:after,
@@ -27,9 +28,133 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #F1F3F5;
 }
 
 button {
     cursor: pointer;
-    font-family: 'Inter', sans-serif;   
+    font-family: 'Inter', sans-serif;
   }
+
+  /* HEADER */
+
+  .header {
+    background-color: #fff;
+    height: 110px;
+    padding: 0 215px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    box-shadow: 0px 7px 50px rgba(0, 0, 0, 0.1);
+  }
+
+  .nickname {
+    display: flex;
+    width: 317px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .entry-link {
+    background-image: url('../images/entry-icon.png');
+    display: block;
+    width: 30px;
+    height: 30px;
+    left: 41px;
+  }
+
+  /* MAIN */
+
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .list-applications {
+    text-align: center;
+    width: 1170px;
+    height: 648px;
+    background-color: #fff;
+    padding: 50px 60px;
+    margin-top: 97px;
+  }
+
+  .list-applications__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #313A49;
+  }
+
+  .form-applications {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table-container {
+    width: 780px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-applications__columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* FILTER */
+
+  .sidebar-filter {
+    width: 255px;
+    height: 165px;
+    background-color: #F8F8F8;
+  }
+
+  .sidebar-filter p {
+    margin: 0;
+    height: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #7B939B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 22px;
+  }
+
+  .sidebar-filter ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .sidebar-filter li{
+    height: 22px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #313A49;
+    margin-bottom: 13px;
+    padding-left: 8px;
+    text-align: left;
+  }
+
+  .sidebar-filter li:active{
+    height: 22px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #313A49;
+    margin-bottom: 13px;
+    padding-left: 8px;
+    text-align: left;
+  }
+
+
