@@ -6,7 +6,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<div>Главная</div>} />
-                <Route path="/application" element={<div></div>} />
+                <Route path="/applications/:id" element={<div>Заявка</div>} />
             </Routes>
         </BrowserRouter>
     );
