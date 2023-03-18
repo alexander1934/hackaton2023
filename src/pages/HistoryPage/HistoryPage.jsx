@@ -19,7 +19,7 @@ const HistoryPage = () => {
         <section className="list-applications">
           <h1 className="list-applications__title">История обработки заявки №18471129</h1>
           <div class="container table-container">
-                <table class="event-data-table">
+                <table class="event-data-table history-table">
                   <tr class="column-names blue-row">
                     <td className="title-td"></td>
                     <td className="title-td">СТАТУС</td>

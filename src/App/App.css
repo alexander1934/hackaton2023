@@ -139,6 +139,7 @@ button {
 .filter-components {
   display: flex;
   justify-content: space-between;
+  width: 789px;
 }
 
 #download-button {
@@ -261,7 +262,7 @@ button {
   text-align: left;
 }
 
-.changeable-data {
+.history-table .changeable-data {
   width: 155px;
 }
 
