@@ -16,7 +16,6 @@ const MainPage = () => {
   let myRequestsHandler = () => {
       setMyRequests(prev => !prev)
   }
-
   return (
     <div>
       <header className="header">
