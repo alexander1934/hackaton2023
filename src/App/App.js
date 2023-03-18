@@ -10,7 +10,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<MainPage />} />
                 <Route path="/request" element={<RequestPage/>} />
-                <Route path="/history" element={<HistoryPage/>} />
+                <Route path="/request/history" element={<HistoryPage/>} />
             </Routes>
         </BrowserRouter>
     );

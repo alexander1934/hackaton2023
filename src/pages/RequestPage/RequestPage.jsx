@@ -20,10 +20,10 @@ const RequestPage = () => {
           <h1 className="list-applications__title">Заявка №18471129</h1>
           <ul className="request-buttons">
             <li className="request-buttons__item">
-              <Button id="request-button--1">Назад</Button>
+              <Link to={"/"}><Button id="request-button--1">Назад</Button></Link>
             </li>
             <li className="request-buttons__item">
-              <Button id="request-button--2">История обработки</Button>
+              <Link to={'/request/history'}><Button id="request-button--2">История обработки</Button></Link>
             </li>
           </ul>
           <section className="request-info">
