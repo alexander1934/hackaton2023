@@ -21,7 +21,7 @@ const MultiDropdown = ({options}) => {
     return (
         <div>
             <div className={style.selected_value} onClick={openHandler}>
-                <div>{optionValue === "" ? "Выберите фильтр..." : optionValue}</div>
+                <div>{optionValue === "" ? "Искать по..." : optionValue}</div>
                 <img src={arrow} alt=""/>
             </div>
             {isOpen && (
@@ -30,7 +30,8 @@ const MultiDropdown = ({options}) => {
                         {options.map((option) => {
                             return (
                                 <li key={option.key} className={style.option}>
-                                    <button onClick={() => filterParams(option.key, option.value)}>{option.value}</button>
+                                    <button
+                                        onClick={() => filterParams(option.key, option.value)}>{option.value}</button>
                                 </li>
                             );
                         })}
@@ -39,7 +40,6 @@ const MultiDropdown = ({options}) => {
             )
             }
         </div>
-    )
-        ;
+    );
 };
 export default MultiDropdown;
