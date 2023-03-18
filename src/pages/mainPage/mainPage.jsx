@@ -197,3 +197,4 @@ const MainPage = () => {
       </main>
     </div>
   );
+}

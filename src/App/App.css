@@ -50,6 +50,7 @@ button {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   .header div {
     width: 1170px;
     display: flex;
@@ -58,6 +59,8 @@ button {
 
   .nickname {
 =======
+=======
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
 .header div {
     width: 1170px;
     display: flex;
@@ -65,6 +68,9 @@ button {
 }
 
 .nickname {
+<<<<<<< HEAD
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
+=======
 >>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
     display: flex;
     width: 317px;
@@ -102,8 +108,12 @@ button {
     line-height: 29px;
     color: #313A49;
 <<<<<<< HEAD
+<<<<<<< HEAD
     margin: 0 0 35px;
   }
+=======
+}
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
 =======
 }
 >>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
@@ -113,6 +123,7 @@ button {
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   #filter-input {
     width: 192px;
@@ -136,6 +147,9 @@ button {
 =======
 .table-container {
 >>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
+=======
+.table-container {
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
     width: 789px;
     height: 430px;
     display: flex;
@@ -147,6 +161,7 @@ button {
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   .filter-components {
     display: flex;
@@ -174,6 +189,8 @@ button {
 
   .sidebar-filter {
 =======
+=======
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
 .filter-inputs {
     display: flex;
     justify-content: space-between;
@@ -200,13 +217,20 @@ button {
 /* FILTER */
 
 .sidebar-filter {
+<<<<<<< HEAD
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
+=======
 >>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
     width: 225px;
     height: 165px;
     background-color: #F8F8F8;
     margin-top: 50px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   }
+=======
+}
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
 =======
 }
 >>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
@@ -244,10 +268,13 @@ button {
     align-items: center;
     border-left: 5px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   }
 
   #clear-button {
 =======
+=======
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
 }
 
 .selected-value {
@@ -255,6 +282,9 @@ button {
 }
 
 #clear-button {
+<<<<<<< HEAD
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
+=======
 >>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
     font-weight: 500;
     font-size: 12px;
@@ -265,7 +295,10 @@ button {
     border: 1px solid #313A49;
     border-radius: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 100%;
+=======
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
 =======
 >>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
     display: flex;
@@ -273,17 +306,23 @@ button {
     width: 225px;
     height: 39px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   }
 
   /* TABLE */
 
   .event-data-table td {
 =======
+=======
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
 }
 
 /* TABLE */
 
 .event-data-table td {
+<<<<<<< HEAD
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
+=======
 >>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
     position: relative;
     /* height: 35px; */
@@ -359,6 +398,7 @@ button {
     height: 385px;
 }
 
+<<<<<<< HEAD
   .event-data-table tr:not(:last-of-type) td {
     border-bottom: 1px solid #7B939B;
   }
@@ -450,3 +490,6 @@ button {
   .active-page-pag {
     text-decoration: underline;
   }
+=======
+
+>>>>>>> 4c2536d65a0f42fd676160d7875a7f850fee3a2a
