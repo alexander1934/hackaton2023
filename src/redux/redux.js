@@ -1,10 +1,8 @@
-import {combineReducers, legacy_createStore} from "redux";
-import MainPageReducer from "./reducers/MainPageReducer";
+import {configureStore} from "@reduxjs/toolkit";
+import MainPageReducer from "./reducers/MainPageSlice";
 
-let redusers = combineReducers({
-    MainPage: MainPageReducer,
+export default configureStore({
+    reducer: {
+        MainPage: MainPageReducer,
+    }
 })
-
-let store = legacy_createStore(redusers);
-
-export default store;

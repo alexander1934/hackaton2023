@@ -4,8 +4,10 @@ import MultiDropdown from "../../components/MultiDropdown/MultiDropdown";
 import Input from "../../components/Input/Input";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import {useSelector} from "react-redux";
 
 const MainPage = () => {
+  let name = useSelector(state => state.MainPage.userName)
   let [fiveDays, setFiveDays] = useState(false);
   let [myRequests, setMyRequests] = useState(false);
 
@@ -23,8 +25,7 @@ const MainPage = () => {
           <Link className="logo-link" to={"/"}>
             <img className="logo" src={logo} alt="Логотип" />
           </Link>
-          <p className="nickname">
-            Профацкий Михаил Андреевич <a className="entry-link" href="#"></a>
+          <p className="nickname">{name}<a className="entry-link" href="#"></a>
           </p>
         </div>
       </header>
