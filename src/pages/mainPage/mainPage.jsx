@@ -1,4 +1,4 @@
-import logo from "../../images/logo.png";
+import logo2 from "../../images/logo2.svg";
 import Button from "../../components/Button/Button";
 import MultiDropdown from "../../components/MultiDropdown/MultiDropdown";
 import Input from "../../components/Input/Input";
@@ -10,18 +10,18 @@ const MainPage = () => {
   let [myRequests, setMyRequests] = useState(false);
 
   let fiveDaysHandler = () => {
-      setFiveDays(prev => !prev)
-  }
+    setFiveDays((prev) => !prev);
+  };
 
   let myRequestsHandler = () => {
-      setMyRequests(prev => !prev)
-  }
+    setMyRequests((prev) => !prev);
+  };
   return (
     <div>
       <header className="header">
         <div>
           <Link className="logo-link" to={"/"}>
-            <img className="logo" src={logo} alt="Логотип" />
+             <img className="logo" src={logo2} alt="Логотип" />
           </Link>
           <p className="nickname">
             Профацкий Михаил Андреевич <a className="entry-link" href="#"></a>
@@ -61,7 +61,7 @@ const MainPage = () => {
                 <Button id="download-button">Загрузить файл .xlsx</Button>
               </div>
               <div class="container table-container">
-                <table class="event-data-table">
+                <table class="event-data-table main-table">
                   <tr class="column-names blue-row">
                     <td className="title-td"></td>
                     <td className="title-td">№ Заявки</td>
@@ -70,86 +70,114 @@ const MainPage = () => {
                     <td className="title-td">СТАТУС</td>
                   </tr>
                   <tr>
-                    <td className="circle-status--green"></td>
-                    <td class="changeable-data">18471129</td>
-                    <td class="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-                    <td class="changeable-data">615301408074</td>
-                    <td class="changeable-data">Удалена (ошибка ввода)</td>
+                      <td className="circle-status--green"><Link to={'/request'}></Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>18471129</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>ЛИТВИНОВА НИНА ТИМОФЕЕВНА</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>615301408074</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>Удалена (ошибка ввода)</Link></td>
+
                   </tr>
                   <tr class="blue-row">
-                    <td className="circle-status--green"></td>
-                    <td class="changeable-data">18471129</td>
-                    <td class="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-                    <td class="changeable-data">615301408074</td>
-                    <td class="changeable-data">Удалена (ошибка ввода)</td>
+                  <td className="circle-status--green"><Link to={'/request'}></Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>18471129</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>ЛИТВИНОВА НИНА ТИМОФЕЕВНА</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>615301408074</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>Удалена (ошибка ввода)</Link></td>
                   </tr>
                   <tr>
-                    <td className="circle-status--green"></td>
-                    <td class="changeable-data">18471129</td>
-                    <td class="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-                    <td class="changeable-data">615301408074</td>
-                    <td class="changeable-data">Удалена (ошибка ввода)</td>
+                  <td className="circle-status--green"><Link to={'/request'}></Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>18471129</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>ЛИТВИНОВА НИНА ТИМОФЕЕВНА</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>615301408074</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>Удалена (ошибка ввода)</Link></td>
                   </tr>
                   <tr class="blue-row">
-                    <td className="circle-status--green"></td>
-                    <td class="changeable-data">18471129</td>
-                    <td class="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-                    <td class="changeable-data">615301408074</td>
-                    <td class="changeable-data">Удалена (ошибка ввода)</td>
+                  <td className="circle-status--green"><Link to={'/request'}></Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>18471129</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>ЛИТВИНОВА НИНА ТИМОФЕЕВНА</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>615301408074</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>Удалена (ошибка ввода)</Link></td>
                   </tr>
                   <tr>
-                    <td className="circle-status--red"></td>
-                    <td class="changeable-data">18471129</td>
-                    <td class="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-                    <td class="changeable-data">615301408074</td>
-                    <td class="changeable-data">Удалена (ошибка ввода)</td>
+                  <td className="circle-status--green"><Link to={'/request'}></Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>18471129</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>ЛИТВИНОВА НИНА ТИМОФЕЕВНА</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>615301408074</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>Удалена (ошибка ввода)</Link></td>
                   </tr>
                   <tr class="blue-row">
-                    <td className="circle-status--green"></td>
-                    <td class="changeable-data">18471129</td>
-                    <td class="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-                    <td class="changeable-data">615301408074</td>
-                    <td class="changeable-data">Удалена (ошибка ввода)</td>
+                  <td className="circle-status--green"><Link to={'/request'}></Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>18471129</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>ЛИТВИНОВА НИНА ТИМОФЕЕВНА</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>615301408074</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>Удалена (ошибка ввода)</Link></td>
                   </tr>
                   <tr>
-                    <td className="circle-status--yellow"></td>
-                    <td class="changeable-data">18471129</td>
-                    <td class="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-                    <td class="changeable-data">615301408074</td>
-                    <td class="changeable-data">Удалена (ошибка ввода)</td>
+                  <td className="circle-status--green"><Link to={'/rquest'}></Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>18471129</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>ЛИТВИНОВА НИНА ТИМОФЕЕВНА</Link></td>
+                      <td class="changeable-data"><Link to={'/rquest'}>615301408074</Link></td>
+                      <td class="changeable-data"><Link to={'/rquest'}>Удалена (ошибка ввода)</Link></td>
                   </tr>
                   <tr class="blue-row">
-                    <td className="circle-status--green"></td>
-                    <td class="changeable-data">18471129</td>
-                    <td class="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-                    <td class="changeable-data">615301408074</td>
-                    <td class="changeable-data">Удалена (ошибка ввода)</td>
+                  <td className="circle-status--green"><Link to={'/request'}></Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>18471129</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>ЛИТВИНОВА НИНА ТИМОФЕЕВНА</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>615301408074</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>Удалена (ошибка ввода)</Link></td>
                   </tr>
                   <tr>
-                    <td className="circle-status--green"></td>
-                    <td class="changeable-data">18471129</td>
-                    <td class="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-                    <td class="changeable-data">615301408074</td>
-                    <td class="changeable-data">Удалена (ошибка ввода)</td>
+                     <td className="circle-status--green"><Link to={'/request'}></Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>18471129</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>ЛИТВИНОВА НИНА ТИМОФЕЕВНА</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>615301408074</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>Удалена (ошибка ввода)</Link></td>
                   </tr>
                   <tr class="blue-row">
-                    <td className="circle-status--green"></td>
-                    <td class="changeable-data">18471129</td>
-                    <td class="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-                    <td class="changeable-data">615301408074</td>
-                    <td class="changeable-data">Удалена (ошибка ввода)</td>
+                  <td className="circle-status--green"></td>
+                  <td class="changeable-data"><Link to={'/request'}>18471129</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>ЛИТВИНОВА НИНА ТИМОФЕЕВНА</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>615301408074</Link></td>
+                      <td class="changeable-data"><Link to={'/request'}>Удалена (ошибка ввода)</Link></td>
                   </tr>
+
                 </table>
               </div>
             </div>
-            <aside className='sidebar-filter'>
-                  <p>Фильтр</p>
-                  <ul>
-                    <li><button className={`filter-button ${fiveDays ? "selected-value" : ""}`} onClick={()=> fiveDaysHandler()}>5 дней без изменения</button></li>
-                    <li><button className={`filter-button ${myRequests ? "selected-value" : ""}`} onClick={()=> myRequestsHandler()}>Заявки оформленные мной</button></li>
-                  </ul>
-                  <Button id='clear-button' onClick={()=> {setMyRequests(false); setFiveDays(false)} }>Очистить</Button>
-                </aside>
+            <aside className="sidebar-filter">
+              <p>Фильтр</p>
+              <ul>
+                <li>
+                  <button
+                    className={`filter-button ${
+                      fiveDays ? "selected-value" : ""
+                    }`}
+                    onClick={() => fiveDaysHandler()}
+                  >
+                    5 дней без изменения
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className={`filter-button ${
+                      myRequests ? "selected-value" : ""
+                    }`}
+                    onClick={() => myRequestsHandler()}
+                  >
+                    Заявки оформленные мной
+                  </button>
+                </li>
+              </ul>
+              <Button
+                id="clear-button"
+                onClick={() => {
+                  setMyRequests(false);
+                  setFiveDays(false);
+                }}
+              >
+                Очистить
+              </Button>
+            </aside>
           </div>
           <ul className="pagination-list">
             <li className="pagination-item pagination-item--arrow-back">
@@ -200,158 +228,6 @@ const MainPage = () => {
       </main>
     </div>
   );
-}
+};
 
 export default MainPage;
-// import logo from '../../images/logo.png';
-// import Button from '../../components/Button/Button';
-// import MultiDropdown from "../../components/MultiDropdown/MultiDropdown";
-// import {Link} from "react-router-dom";
-// import {useState} from "react";
-
-// const MainPage = () => {
-//     let [fiveDays, setFiveDays] = useState(false);
-//     let [myRequests, setMyRequests] = useState(false);
-
-//     let fiveDaysHandler = () => {
-//         setFiveDays(prev => !prev)
-//     }
-
-//     let myRequestsHandler = () => {
-//         setMyRequests(prev => !prev)
-//     }
-
-//     return (
-//       <div>
-//         <header className='header'>
-//           <div>
-//           <Link className='logo-link' to={'/'}>
-//               <img className='logo' src={logo} alt="Логотип" />
-//           </Link>
-//           <p className='nickname'>Профацкий Михаил Андреевич <Link className='entry-link' to={'/'}></Link></p>
-//           </div>
-//         </header>
-//         <main className='main'>
-//               <section className='list-applications'>
-//                 <h1 className='list-applications__title'>Список заявок</h1>
-//                 <div className='list-applications__columns'>
-//                 <div className='table-container'>
-//                   <div className='filter-inputs'>
-//                   <MultiDropdown
-//                         options={[
-//                             { key: "INN", value: "ИНН" },
-//                             { key: "clientID", value: "№ клиента" },
-//                             { key: "requestID", value: "№ запроса" },
-//                         ]}
-//                     />
-//                     <Button id='download-button'>Загрузить файл .xlsx</Button>
-//                   </div>
-//                   <div className="container table-container">
-//                     <table className="event-data-table">
-//                         <tr className="column-names blue-row">
-//                             <td className='title-td'></td>
-//                             <td className='title-td'>№ Заявки</td>
-//                             <td className='title-td'>КЛИЕНТ</td>
-//                             <td className='title-td'>ИНН</td>
-//                             <td className='title-td'>СТАТУС</td>
-//                         </tr>
-//                         <tr>
-//                             <td className='circle-status--green'></td>
-//                             <td className="changeable-data">18471129</td>
-//                             <td className="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-//                             <td className="changeable-data">615301408074</td>
-//                             <td className="changeable-data">Удалена (ошибка ввода)</td>
-
-
-//                         </tr>
-//                         <tr className="blue-row">
-//                             <td className='circle-status--green'></td>
-//                             <td className="changeable-data">18471129</td>
-//                             <td className="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-//                             <td className="changeable-data">615301408074</td>
-//                             <td className="changeable-data">Удалена (ошибка ввода)</td>
-
-//                         </tr>
-//                         <tr>
-//                             <td className='circle-status--green'></td>
-//                             <td className="changeable-data">18471129</td>
-//                             <td className="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-//                             <td className="changeable-data">615301408074</td>
-//                             <td className="changeable-data">Удалена (ошибка ввода)</td>
-
-//                         </tr>
-//                         <tr className="blue-row">
-//                             <td className='circle-status--green'></td>
-//                             <td className="changeable-data">18471129</td>
-//                             <td className="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-//                             <td className="changeable-data">615301408074</td>
-//                             <td className="changeable-data">Удалена (ошибка ввода)</td>
-
-//                         </tr>
-//                         <tr>
-//                             <td className='circle-status--red'></td>
-//                             <td className="changeable-data">18471129</td>
-//                             <td className="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-//                             <td className="changeable-data">615301408074</td>
-//                             <td className="changeable-data">Удалена (ошибка ввода)</td>
-
-//                         </tr>
-//                         <tr className="blue-row">
-//                             <td className='circle-status--green'></td>
-//                             <td className="changeable-data">18471129</td>
-//                             <td className="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-//                             <td className="changeable-data">615301408074</td>
-//                             <td className="changeable-data">Удалена (ошибка ввода)</td>
-
-//                         </tr>
-//                         <tr>
-//                             <td className='circle-status--yellow'></td>
-//                             <td className="changeable-data">18471129</td>
-//                             <td className="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-//                             <td className="changeable-data">615301408074</td>
-//                             <td className="changeable-data">Удалена (ошибка ввода)</td>
-
-//                         </tr>
-//                         <tr className="blue-row">
-//                             <td className='circle-status--green'></td>
-//                             <td className="changeable-data">18471129</td>
-//                             <td className="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-//                             <td className="changeable-data">615301408074</td>
-//                             <td className="changeable-data">Удалена (ошибка ввода)</td>
-
-//                         </tr>
-//                         <tr>
-//                             <td className='circle-status--green'></td>
-//                             <td className="changeable-data">18471129</td>
-//                             <td className="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-//                             <td className="changeable-data">615301408074</td>
-//                             <td className="changeable-data">Удалена (ошибка ввода)</td>
-
-//                         </tr>
-//                         <tr className="blue-row">
-//                             <td className='circle-status--green'></td>
-//                             <td className="changeable-data">18471129</td>
-//                             <td className="changeable-data">ЛИТВИНОВА НИНА ТИМОФЕЕВНА</td>
-//                             <td className="changeable-data">615301408074</td>
-//                             <td className="changeable-data">Удалена (ошибка ввода)</td>
-
-//                         </tr>
-//                     </table>
-//                 </div>
-//                 </div>
-//                 <aside className='sidebar-filter'>
-//                   <p>Фильтр</p>
-//                   <ul>
-//                     <li><button className={`filter-button ${fiveDays ? "selected-value" : ""}`} onClick={()=> fiveDaysHandler()}>5 дней без изменения</button></li>
-//                     <li><button className={`filter-button ${myRequests ? "selected-value" : ""}`} onClick={()=> myRequestsHandler()}>Заявки оформленные мной</button></li>
-//                   </ul>
-//                   <Button id='clear-button' onClick={()=> {setMyRequests(false); setFiveDays(false)} }>Очистить</Button>
-//                 </aside>
-//                 </div>
-//               </section>
-//         </main>
-//       </div>
-//     )
-// };
-
-// export default MainPage;

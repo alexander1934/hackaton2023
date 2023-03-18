@@ -1,4 +1,4 @@
-import logo from "../../images/logo.png";
+import logo2 from "../../images/logo2.svg";
 import Button from "../../components/Button/Button";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,7 @@ const HistoryPage = () => {
       <header className="header">
         <div>
           <Link className="logo-link" to={"/"}>
-            <img className="logo" src={logo} alt="Логотип" />
+            <img className="logo" src={logo2} alt="Логотип" />
           </Link>
           <p className="nickname">
             Профацкий Михаил Андреевич <a className="entry-link" href="#"></a>
@@ -18,6 +18,7 @@ const HistoryPage = () => {
       <main className="main">
         <section className="list-applications">
           <h1 className="list-applications__title">История обработки заявки №18471129</h1>
+          <Link id="request-button--1" to={'/'}>Назад</Link>
           <div class="container table-container">
                 <table class="event-data-table history-table">
                   <tr class="column-names blue-row">

@@ -1,4 +1,4 @@
-import logo from "../../images/logo.png";
+import logo2 from "../../images/logo2.svg";
 import Button from "../../components/Button/Button";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,7 @@ const RequestPage = () => {
       <header className="header">
         <div>
           <Link className="logo-link" to={"/"}>
-            <img className="logo" src={logo} alt="Логотип" />
+            <img className="logo" src={logo2} alt="Логотип" />
           </Link>
           <p className="nickname">
             Профацкий Михаил Андреевич <a className="entry-link" href="#"></a>
