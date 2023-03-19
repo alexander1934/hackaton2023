@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import style from "./MultiDropdown.module.css";
 import arrow from "../../assets/dropdownArrow.svg";
+import {useDispatch} from "react-redux";
+import {setSearchFilter} from "../../redux/reducers/MainPageSlice";
 
 const MultiDropdown = ({options}) => {
     const [isOpen, openToggler] = useState(false);
@@ -11,10 +13,11 @@ const MultiDropdown = ({options}) => {
         () => openToggler((prevValue) => !prevValue),
         []
     );
+
+    let dispatch = useDispatch();
     const filterParams = (key, value) => {
-        console.log(key)
         setValue(value);
-        console.log(optionValue)
+        dispatch(setSearchFilter(key));
         openHandler();
     }
 

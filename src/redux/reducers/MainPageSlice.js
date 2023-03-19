@@ -5,35 +5,29 @@ const MainPageSlice = createSlice({
     initialState: {
         userName: "Коваленко Александр Сергеевич",
         inputValue: "",
-        requestsData: [
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-            {status: "ok", ID: 615301408074, clientName: "ЛИТВИНОВА НИНА ТИМОФЕЕВНА", INN: 615301408074, requestStatus: "Удалена (ошибка ввода)"},
-        ],
+        requestsData: [],
         inputParams: "",
         fiveDaysState: false,
         myRequestsState: false,
     },
     reducers: {
-        searchRequests(state, action){
-            console.log(state.userName);
+        searchRequests(state, action){},
+        inputValueHandler(state, action){
+            state.inputValue = action.payload;
         },
-        setData(state, action){},
+        setData(state, action){
+            state.requestsData = action.payload;
+            console.log(state.requestsData)
+        },
         setFiveDaysParam(state, action){},
         setMyRequestsParam(state, action){},
+        setSearchFilter(state, action){
+            state.inputParams = action.payload;
+            console.log(state.inputParams)
+        },
     }
 })
 
-export const {searchRequests, setData, setFiveDaysParam, setMyRequestsParam} = MainPageSlice.actions;
+export const {searchRequests, setData, setFiveDaysParam, setMyRequestsParam, setSearchFilter, inputValueHandler} = MainPageSlice.actions;
 
 export default MainPageSlice.reducer;

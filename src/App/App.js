@@ -1,5 +1,5 @@
 import './App.css';
-import MainPage from '../pages/MainPage/MainPage'
+import MainPage from '../pages/mainPage/mainPage'
 import RequestPage from '../pages/RequestPage/RequestPage'
 import HistoryPage from '../pages/HistoryPage/HistoryPage'
 import {BrowserRouter, Route, Routes} from "react-router-dom";
@@ -9,8 +9,8 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<MainPage />} />
-                <Route path="/request" element={<RequestPage/>} />
-                <Route path="/request/history" element={<HistoryPage/>} />
+                <Route path="/request/:id" element={<RequestPage/>} />
+                <Route path="/request/:id/history" element={<HistoryPage/>} />
             </Routes>
         </BrowserRouter>
     );
