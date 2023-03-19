@@ -9,6 +9,16 @@ import {useEffect, useState} from "react";
 const HistoryPage = () => {
   let [history, setHistory] = useState([])
 
+  let colorHandler = (status) =>{
+    if (status == "Финальные"){
+      return "green"
+    } else if (status == "Ликвидные") {
+      return "yellow"
+    } else {
+      return "red"
+    }
+  }
+
   let getHistory = () =>{
     const fetch = () =>{
       axios.get(`http://127.0.0.1:8000/api/connection-requests/history/?number=${id}`)
@@ -61,7 +71,7 @@ const HistoryPage = () => {
                   {history.map((item)=>{
                     return (
                         <tr key={item.id}>
-                        <td className="circle-status--green"></td>
+                        <td className={`circle-status--${colorHandler(item.status.group.title)}`}></td>
                     <td class="changeable-data">{item.status.title ? item.status.title : "-"}</td>
                     <td class="changeable-data">{item.date_entered_status ? item.date_entered_status : "-"}</td>
                     <td class="changeable-data">{item.reg_date_brigade_for_TVP ? item.reg_date_brigade_for_TVP : "-"}</td>
